@@ -1,0 +1,29 @@
+<section class="form-section">
+  <form class="search-form">
+    <div class="form-group">
+      <label for="from-location">From</label>
+      <select>
+        <option>Select Starting Location</option>
+        @for (item of location$ | async; track $index) {
+        <option [value]="item.locationId">{{ item.locationName }}</option>
+        }
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="to-location">To</label>
+      <select>
+        <option>Select Destination Location</option>
+        @for (item of location$ | async; track $index) {
+        <option [value]="item.locationId">{{ item.locationName }}</option>
+        }
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="journey-date">Date</label>
+      <input type="date" id="journey-date" />
+    </div>
+    <div class="form-group">
+      <a routerLink="/booking"><button type="submit">Search Buses</button></a>
+    </div>
+  </form>
+</section>

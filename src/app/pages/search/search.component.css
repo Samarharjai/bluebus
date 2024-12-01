@@ -1,0 +1,98 @@
+.form-section {
+  margin-bottom: 40px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 24px;
+}
+button:hover {
+  background-color: #83bfff;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+/* General styling for the select element */
+select {
+  width: 100%; /* Full width for responsive design */
+  padding: 10px 15px; /* Spacing inside the element */
+  margin: 10px 0; /* Space between elements */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  font-size: 16px; /* Readable text size */
+  font-family: "Arial", sans-serif; /* Font style */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect */
+select:hover {
+  border-color: #007bff; /* Highlight border */
+  background-color: #fff; /* Brighten background */
+}
+
+/* Focus (when the select is active) */
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Highlight border */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glowing border */
+}
+
+/* Option styling */
+select option {
+  padding: 10px; /* Spacing for readability */
+  background-color: #fff; /* Consistent background */
+  color: #333; /* Text color */
+}
+
+/* Styling for disabled select options */
+select option:disabled {
+  color: #999; /* Grey text for disabled options */
+  background-color: #f2f2f2; /* Light grey background */
+}
+
+/* Custom cursor for better UX */
+select {
+  cursor: pointer;
+}
